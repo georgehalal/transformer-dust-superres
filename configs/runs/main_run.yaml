@@ -1,0 +1,31 @@
+wandb:
+  project: superres-dust
+  online: True
+  log_model: True
+  run:
+    id:
+
+trainer:
+  accelerator: mps
+  strategy: auto
+  checkpoint_path:
+  devices: auto
+  epochs: 1000
+  log_maps_every_n_epochs: 5
+  # Use 1 if scheduler is used to log learning rate
+  log_every_n_steps: 50
+  overfit_batches: 0
+
+dataset:
+  batch_size: 1
+  debug: False
+  # The parent directory of the datasets
+  dir:
+  num_workers: 9
+
+model:
+  # The name of the model configuration .yaml in <project-directory>/configs/model/
+  name: main
+  # Whether to use torch.checkpoints.
+  # Switch to True if False leads to an OOM-Exception.
+  memory_efficient: False

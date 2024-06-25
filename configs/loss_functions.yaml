@@ -1,0 +1,9 @@
+# Loss function relative percentages
+l1: 1.0
+ssim: 0.0
+ms_ssim: 0.0
+vgg:
+  p: 0.0
+  vgg_model: vgg19
+  batch_norm: False
+  layers: 8

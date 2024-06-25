@@ -1,0 +1,21 @@
+# run the following command to create a new conda environment with the required packages
+# conda create -n pytorch-nightly --file requirements.txt -c pytorch-nightly -c photosynthesis-team -c conda-forge -c PyTorch
+pytorch-nightly::pytorch 
+wandb
+tqdm
+torchvision
+torchaudio
+torchmetrics
+lightning
+pandas
+numpy
+matplotlib
+scipy
+timm
+onnxruntime
+seaborn
+ipykernel
+ipywidgets
+jupyter
+piq
+python-dotenv
